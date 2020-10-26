@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace KeySchedule_GUI
 {
@@ -92,7 +93,7 @@ namespace KeySchedule_GUI
             if (CanOpenClose(key, OPEN, day))
             {
                 //鍵情報を保存
-                answer += Convert.ToString(key, 2) + Environment.NewLine;
+                answer += Convert.ToString(key, 2).PadLeft(schedule.Length,'0') + Environment.NewLine;
 
                 //業務開始
                 DepositKey(key, box, day, OPEN, answer);
@@ -157,6 +158,9 @@ namespace KeySchedule_GUI
             //閉店可能
             if (CanOpenClose(key, CLOSE, day))
             {
+                //鍵情報を保存
+                answer += Convert.ToString(key, 2).PadLeft(schedule.Length, '0') + Environment.NewLine;
+
                 Open(key, box, day + 1, answer);
             }
 
@@ -181,6 +185,39 @@ namespace KeySchedule_GUI
 
             //開け閉め不可
             return false;
+        }
+
+        static public string AnswerToCsv(string answer)
+        {
+            string csv="";
+
+            //分解後のデータ
+            List<char[]> list=new List<char[]>();
+
+            //行分解の準備
+            StringReader stringReader = new StringReader(answer);
+            //行
+            string line;
+
+            //分解して格納
+            while((line = stringReader.ReadLine()) != null)
+            {
+                list.Add(line.ToCharArray().Reverse().ToArray());
+            }
+
+            for (int p = 0; p < list[0].Length; p++)
+            {
+                csv += Environment.NewLine;
+
+                for (int t = 0; t < list.Count; t++)
+                {
+                    csv += list[t][p]+",";
+                }
+            }
+
+            csv.Remove(csv.Length - 1);
+
+            return csv;
         }
     }
 }

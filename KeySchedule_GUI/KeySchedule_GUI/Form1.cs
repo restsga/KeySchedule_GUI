@@ -100,7 +100,9 @@ namespace KeySchedule_GUI
 
             if (dfs.answers.Count > 0)
             {
-                label1.Text = dfs.answers.Last();
+                textBox1.Text = DFS.AnswerToCsv(dfs.answers.Last());
+
+                label1.Text = "End";
             }
             else
             {
