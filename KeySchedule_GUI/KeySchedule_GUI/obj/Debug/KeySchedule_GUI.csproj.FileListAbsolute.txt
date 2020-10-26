@@ -1,0 +1,10 @@
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\bin\Debug\KeySchedule_GUI.exe.config
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\bin\Debug\KeySchedule_GUI.exe
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\bin\Debug\KeySchedule_GUI.pdb
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\obj\Debug\KeySchedule_GUI.csprojAssemblyReference.cache
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\obj\Debug\KeySchedule_GUI.Form1.resources
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\obj\Debug\KeySchedule_GUI.Properties.Resources.resources
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\obj\Debug\KeySchedule_GUI.csproj.GenerateResource.cache
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\obj\Debug\KeySchedule_GUI.csproj.CoreCompileInputs.cache
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\obj\Debug\KeySchedule_GUI.exe
+C:\Users\松永創\Documents\GitClone\Windows\KeySchedule_GUI\KeySchedule_GUI\KeySchedule_GUI\obj\Debug\KeySchedule_GUI.pdb
